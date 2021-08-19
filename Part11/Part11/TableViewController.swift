@@ -34,10 +34,9 @@ class TableViewController: UITableViewController {
     }
     
     //セルを選択した時の処理
-    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
-        
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         area = areasArray[indexPath.row]
-        
-        return indexPath
+
+        performSegue(withIdentifier: "Segue", sender: nil)
     }
 }

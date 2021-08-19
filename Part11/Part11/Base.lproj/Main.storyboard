@@ -75,9 +75,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="9wG-Tf-pQb" kind="unwind" unwindAction="exitChangeWithSegue:" id="TNH-32-axz"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -88,10 +85,13 @@
                     <navigationItem key="navigationItem" title="都道府県" id="0bU-Qj-Sty">
                         <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="rdr-uQ-Ahc">
                             <connections>
-                                <segue destination="9wG-Tf-pQb" kind="unwind" unwindAction="exitCancelWithSegue:" id="fSt-e3-KSZ"/>
+                                <segue destination="9wG-Tf-pQb" kind="unwind" identifier="" unwindAction="exitCancelWithSegue:" id="fSt-e3-KSZ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="9wG-Tf-pQb" kind="unwind" identifier="Segue" unwindAction="exitChangeWithSegue:" id="evZ-hC-Nrj"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sTq-5u-Diz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="9wG-Tf-pQb" userLabel="Exit" sceneMemberID="exit"/>
